@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_In_Force_Required_For_Limit_Order</fullName>
+    <active>true</active>
+    <description>Time_in_Force__c is required for limit order</description>
+    <errorConditionFormula>IF( AND(ISPICKVAL( Order_Type__c ,&apos;Limit&apos;), ISBLANK(TEXT(Order_Type__c))) , true, false)</errorConditionFormula>
+    <errorMessage>Time in Force field has to be filled for limit orders</errorMessage>
+</ValidationRule>

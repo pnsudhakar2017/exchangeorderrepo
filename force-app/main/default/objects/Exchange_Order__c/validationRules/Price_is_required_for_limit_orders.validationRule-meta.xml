@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_is_required_for_limit_orders</fullName>
+    <active>true</active>
+    <description>Price is required for limit orders</description>
+    <errorConditionFormula>IF( AND( ISPICKVAL( Order_Type__c , &apos;Limit&apos;) , ISBLANK( Price__c )) , true, false)</errorConditionFormula>
+    <errorMessage>Price is required for limit orders</errorMessage>
+</ValidationRule>

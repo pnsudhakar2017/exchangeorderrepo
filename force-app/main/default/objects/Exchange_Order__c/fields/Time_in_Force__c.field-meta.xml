@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_in_Force__c</fullName>
+    <description>Specifies the type and time till the limit order is valid.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the type and time till the limit order is valid.</inlineHelpText>
+    <label>Time in Force</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Day</fullName>
+                <default>false</default>
+                <label>Day</label>
+            </value>
+            <value>
+                <fullName>GTC (Good Till Cancel)</fullName>
+                <default>false</default>
+                <label>GTC (Good Till Cancel)</label>
+            </value>
+            <value>
+                <fullName>FoK (Fill or Kill)</fullName>
+                <default>false</default>
+                <label>FoK (Fill or Kill)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
